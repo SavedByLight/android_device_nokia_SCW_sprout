@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_SCW_sprout.mk
+    $(LOCAL_DIR)/twrp_SCW_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_SCW_sprout-eng
