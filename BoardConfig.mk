@@ -49,7 +49,7 @@ TW_CUSTOM_CLOCK_POS := "300"
 TW_CUSTOM_BATTERY_POS := "750"
 
 # GPT Utils
-BOARD_PROVIDES_GPTUTILS := true
+#BOARD_PROVIDES_GPTUTILS := true
 
 B# Architecture
 TARGET_ARCH := arm64
@@ -142,8 +142,8 @@ TW_EXCLUDE_APEX := true
 TW_NO_BIND_SYSTEM := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone50/temp"
-TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery/capacity"
+#TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone50/temp"
+#TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery/capacity"
 
 # Logging
 TARGET_USES_LOGD := true
