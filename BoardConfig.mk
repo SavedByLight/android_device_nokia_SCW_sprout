@@ -51,7 +51,7 @@ TW_CUSTOM_BATTERY_POS := "750"
 # GPT Utils
 #BOARD_PROVIDES_GPTUTILS := true
 
-B# Architecture
+# Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
