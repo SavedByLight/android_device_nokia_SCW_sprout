@@ -10,16 +10,6 @@ DEVICE_PATH := device/hmd/SCW_sprout
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    product \
-    vendor \
-    system_ext \
-    system \
-    odm
-BOARD_USES_RECOVERY_AS_BOOT := true
-
 # Additional
 TARGET_USES_UEFI := true
 TARGET_IS_64_BIT := true
