@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from SCW_sprout device
-$(call inherit-product, device/hmd/SCW_sprout/device.mk)
+$(call inherit-product, device/nokia/SCW_sprout/device.mk)
 
 PRODUCT_DEVICE := SCW_sprout
 PRODUCT_NAME := twrp_SCW_sprout
