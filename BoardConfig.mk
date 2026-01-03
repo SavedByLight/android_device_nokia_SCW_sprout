@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/hmd/SCW_sprout
+DEVICE_PATH := device/nokia/SCW_sprout
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
