@@ -71,10 +71,20 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 3
+BOARD_KERNEL_BASE := 0x00000000
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := SCW_sprout_defconfig
 TARGET_KERNEL_SOURCE := kernel/hmd/SCW_sprout
+
+# mkbootimg
+BOARD_MKBOOTIMG_ARGS:= \
+--dtb_offset=0x01f00000 \
+--kernel_offset=0x00008000 \
+--ramdisk_offset=0x01000000 \
+--tags_offset=0x00000100 \
+--header_version=$(BOARD_BOOTIMG_HEADER_VERSION) \
+--dtb=$(TARGET_PREBUILT_DTB)
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
